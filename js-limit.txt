@@ -1,0 +1,105 @@
+What does "Be Prepared" mean for v8?
+
+	Hidden Classes
+		Hidden classes make js faster
+			v8 internally creates hidden classes for objects at runtime
+			Objects with the same hidden class can use the same optimimized code
+			
+			Example
+				function Point(x, y){
+					this.x = x;
+					this.y = y;
+				}
+				var p1 = new Point(11, 22);
+				var p2 = new Point(33, 44);
+				p2.z = 55;
+
+
+	Avoid Speed Traps
+		Initialize all objects members in contructor functions
+		Always intialize object members in the same order
+
+		How does v8 represent values?
+			Tagged Values
+
+		Prefer numeric values that can represented as 31-bit signed integers
+
+	Arrays
+	
+		Handling Large and Sparse Arrays
+			Fast elements: linear sotrage for compact key sets
+			Dictionary elements: hash table storage arrays
+
+		Use contiguous keys starting at 0 for Arrays
+
+		Don't pre-allocate large Arrays
+
+		Dont delete elements in arrays, espeically numeric arrays
+
+		Dont load unintialized Arrays
+			a = new Array();
+			for(var b = 0; b < 10; b++){
+				a[0] |= b;
+			}
+
+		Double Array Unboxing
+			Array's hidden class tracks elements types
+			Arrays containing only doubles are unboxed
+			Unboxing causes hidden class change
+
+			var a = new Array();
+			a[0] = 77l // Allocates
+			a[1] = 88;
+			a[2] = 0.5; // Allocates, converts
+			a[3] = true; // Allocates, converts
+
+			Hidden Classes for Elements - A better way
+			var a = [77, 88, 0.5, true];
+
+		Preallocate small arrays to correct size before using them
+
+		Don't store non-numeric values in numeric arrays
+
+	Compilers
+
+		Full
+			Quickly generates good but not great JIT code
+			Assumes (almost) nothing about types at compile time
+			
+			Inline Cache
+				Validate type assumptions first, then do work
+				Type dependent code for operations
+				Change at runtime via backpatching as more types are discovered
+				Prefer monomorphic code polymorphic
+
+		Optimized
+			Type feebad makes code faters
+				Types taken from ICs
+				Operations specualatively get inlined
+				Monomorphic functions and constructors can be inlined entirely
+				Inline enables other optimizations
+
+			Logging what gets optimized
+				d8 -time-output time.js
+
+			Optimizing compiler bails out on functions with try/catch blocks
+				- Workaround
+						function performTest(x){
+
+						}
+						try{
+							performText(null)
+						}catch(e){
+							// Handle exception
+						}
+
+	Avoid hidden class changes in functions after they are optimized
+
+
+
+Passing V8 options to chrome
+		Use the --js-flags option
+
+
+Identify and Understand 
+	
