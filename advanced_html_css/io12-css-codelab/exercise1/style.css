@@ -1,0 +1,139 @@
+html{
+	height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', helvetica, Sans-Serif;
+  background: #eaeaea;
+  overflow: hidden;
+
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+h1, h2{
+	font-family: 'Ubuntu';
+	text-shadow: 0 2px 3px rgba(0,0,0,.5);
+}
+
+h1{
+	margin: -30px -50px 0;
+  padding: 60px 50px 0;
+  background: #c11825;
+  font-size: 3.5em;
+  height: 100%;
+  color: white;
+}
+
+h2{
+	position: relative;
+  margin: -30px -50px 30px -50px;
+  padding: 15px 50px;
+  font-size: 2.5em;
+  background-color: #c11825;
+  color: white;
+  box-shadow: inset 0 -2px 2px rgba(0,0,0,.2);
+}
+
+
+#container{
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-1000px);
+	-moz-transform: translateZ(-1000px);
+	-ms-transform: translateZ(-1000px);
+	-o-transform: translateZ(-1000px);
+	transform: translateZ(-1000px);
+}
+
+#container article{
+	width: 800px;
+	height: 550px;
+	background-color: #fff;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	margin-top: -305px;
+	margin-left: -450px;
+
+	display: none;
+
+	-webkit-transition: all 0.8s ease-out 0.0s;
+	-moz-transition: all 0.8s ease-out 0.0s;
+	-ms-transition: all 0.8s ease-out 0.0s;
+	-o-transition: all 0.8s ease-out 0.0s;
+	transition: all 0.8s ease-out 0.0s;
+
+	box-shadow: -8px 8px 16px #ff3232;
+}
+
+#container article h1,#container article h2{
+	padding:0 10px;
+	margin:0;
+	height: 75px;
+	line-height: 90px;
+	color: white;
+	background: #ff3232; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff3232 0%, #d67373 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3232), color-stop(100%,#d67373)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff3232 0%,#d67373 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff3232 0%,#d67373 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff3232 0%,#d67373 100%); /* IE10+ */
+background: linear-gradient(top,  #ff3232 0%,#d67373 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#d67373',GradientType=0 ); /* IE6-9 */
+
+}
+
+#container article.prev2 {
+	display: block;
+	-webkit-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	-moz-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	-ms-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	-o-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+}
+#container article.prev {
+	display: block;
+	-webkit-transform: rotate3d(0,1,0,-45deg) translate3d(0,0,1000px);
+	-moz-transform: rotate3d(0,1,0,-45deg) translate3d(0,0,1000px);
+	-ms-transform: rotate3d(0,1,0,-45deg) translate3d(0,0,1000px);
+	-o-transform: rotate3d(0,1,0,-45deg) translate3d(0,0,1000px);
+	transform: rotate3d(0,1,0,-45deg) translate3d(0,0,1000px);
+
+	-webkit-filter: blur(2px) opacity(0.6);
+	filter: blur(2px) opacity(0.6);
+}
+#container article.current {
+	-webkit-transform: rotate3d(0,1,0,0deg) translate3d(0,0,1000px);
+	-moz-transform: rotate3d(0,1,0,0deg) translate3d(0,0,1000px);
+	-ms-transform: rotate3d(0,1,0,0deg) translate3d(0,0,1000px);
+	-o-transform: rotate3d(0,1,0,0deg) translate3d(0,0,1000px);
+	transform: rotate3d(0,1,0,0deg) translate3d(0,0,1000px);
+  	display: block;
+  	-webkit-filter: blur(0) opacity(1.0);
+  	filter: blur(0) opacity(1.0);
+}
+#container article.next {
+	display: block;
+	-webkit-transform: rotate3d(0,1,0,45deg) translate3d(0,0,1000px);
+	-moz-transform: rotate3d(0,1,0,45deg) translate3d(0,0,1000px);
+	-ms-transform: rotate3d(0,1,0,45deg) translate3d(0,0,1000px);
+	-o-transform: rotate3d(0,1,0,45deg) translate3d(0,0,1000px);
+	transform: rotate3d(0,1,0,45deg) translate3d(0,0,1000px);
+	-webkit-filter: blur(2px) opacity(0.6);
+	filter: blur(2px) opacity(0.6);
+}
+#container article.next2 {
+	-webkit-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	-moz-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	-ms-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	-o-transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	transform: rotate3d(0,1,0,-90deg) translate3d(0,0,1000px);
+	display: block;
+}

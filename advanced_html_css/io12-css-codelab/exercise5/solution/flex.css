@@ -1,0 +1,82 @@
+body {
+	font-family: sans-serif;
+}
+
+#page {
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: -moz-flexbox;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	background-color: darkgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+}
+
+#main {
+	display: -webkit-flexbox;
+	display: -webkit-flex;
+	display: -moz-flexbox;
+	display: flex;
+	-webkit-flex-align: stretch;
+	flex-align: stretch;
+	-webkit-order: 2;
+	order: 2;
+}
+
+#main > article {
+	-webkit-flex-order: 2;
+	flex-order: 2;
+	-webkit-order: 2;
+	order: 2;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: -webkit-calc(100% - 420px);
+	width: calc(100% - 420px);
+	padding: 5px;
+	background-color: white;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+}
+
+#main > nav {
+	width: 200px;
+	-webkit-flex-order: 1;
+	flex-order: 1;
+	-webkit-order: 1;
+	order: 1;
+	background-color: lightgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+	vertical-align: center;
+}
+
+#main > aside {
+	width: 200px;
+	-webkit-flex-order: 3;
+	flex-order: 3;
+	-webkit-order: 3;
+	order: 3;
+	background-color: lightgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+}
+
+#header {
+		-webkit-order: 1;
+		order: 1;
+}
+
+#footer {
+		-webkit-order: 3;
+		order: 3;
+}
+
+.headfoot {
+	text-align: center;
+	padding: 10px;
+	background-color: lightgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+}

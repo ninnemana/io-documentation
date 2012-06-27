@@ -1,0 +1,63 @@
+#main {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-order: 2;
+	order: 2;
+}
+
+#page {
+	background-color: darkgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+}
+
+#main > article {
+	padding: 5px;
+	background-color: white;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+	width: -webkit-calc(100% - 420px);
+	-webkit-order: 2;
+	order: 2;
+}
+
+#main > nav {
+	background-color: lightgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+	vertical-align: center;
+	width: 200px;
+	-webkit-order: 1;
+	order: 1;
+}
+
+#main > aside {
+	background-color: lightgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+	width: 200px;
+	-webkit-order: 3;
+	order: 3;
+}
+
+#header {
+	-webkit-order: 1;
+	order: 1;
+}
+
+#footer {
+	-webkit-order: 3;
+	order: 3;
+}
+
+.headfoot {
+	text-align: center;
+	padding: 10px;
+	background-color: lightgrey;
+	border: solid 2px darkgrey;
+	border-radius: 10px;
+}

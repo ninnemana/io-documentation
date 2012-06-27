@@ -1,0 +1,54 @@
+#thread {
+	-webkit-flow-into: connected;
+	flow-into: connected;
+	font-size: 100%;
+	line-height: 100%;
+	font-family: sans-serif;
+}
+
+.chunk {
+	-webkit-flow-from: connected;
+	flow-from: connected;
+	xborder: solid 1px black;
+}
+
+#mandrill {
+	position: absolute;
+	top: 27%; 
+	left: 39%; 
+	width: 25%;
+	height: 17%;
+}
+
+#region1 { 
+	position: absolute; 
+	top: 17.5%; 
+	left: 12%; 
+	min-height: 8%;
+	width: 53%;
+}
+#region2 { 
+	position: absolute; 
+	top: 25.5%; 
+	left: 12%;
+	min-height: 32%;
+	width: 26%;
+}
+#region3 { 
+	position: absolute; 
+	top: 17.5%; 
+	left: 66%;
+	min-height: 27%;
+	width: 26%;
+}
+#region4 { 
+	position: absolute; 
+	top: 44.5%; 
+	left: 39%; 
+	min-height: 13%;
+	width: 53%;
+}
+
+.leadin {
+	font-weight: bold;
+}

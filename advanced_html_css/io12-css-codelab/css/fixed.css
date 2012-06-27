@@ -1,0 +1,91 @@
+code {
+}
+
+pre, pre.prettyprint {
+  padding: 20px 20px;
+  color: #333;
+  background-color: #e8e8e8;
+  border: 1px solid #bbb;
+  font-family: 'Courier New';
+  box-shadow: 0 0 8px rgba(0,0,0,.2);
+  line-height: 1.0;
+  font-size: 120%;
+}
+
+p, li {
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+
+#container article iframe {
+  margin: 0 -20px;
+  width: 100%;
+  height: 440px;
+  border: solid 15px #fff;
+}
+
+/* --- speakers and tas --- */
+
+article {
+  clear: left;
+}
+
+.tas figure,
+.speakers figure {
+  display: block;
+}
+
+.speakers figure {
+  clear: left;
+  margin: 0 0 40px;
+}
+
+.speakers figure::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.speakers figcaption {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.speakers p {
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+.tas {
+  margin-left: 80px;
+}
+
+.tas figure {
+  width: 160px;
+  margin: 0 45px 18px 0;
+  float: left;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 7px rgba(0,0,0,.2);
+  padding: 7px;
+}
+
+.speakers img {
+  float: left;
+  margin-right: 30px;
+  width: 170px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.tas img {
+  width: 160px;
+  margin-bottom: 8px;
+}
+
+.tas figure:nth-child(odd) {
+  -webkit-transform: rotate(-2deg);
+}
+
+.tas figure:nth-child(even) {
+  -webkit-transform: rotate(2deg);
+}

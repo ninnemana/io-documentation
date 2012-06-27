@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[Exercise 3] Advanced HTML page authoring using modern CSS features</title>
+    <meta charset="utf-8" />
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" rel="stylesheet">
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <link rel="stylesheet" href="../css/fixed.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <script src="../js/slide.js"></script>
+    <script>
+      window.onload = function() {
+        var slide = new Slide(document.querySelector('#container'));
+        prettyPrint();
+      };
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <article class="title">
+        <h1><br>Advanced HTML page authoring using modern CSS features</h1>
+      </article>
+      <article>
+        <h2>Who are we?</h2>
+        <h3>Speakers</h3>
+        <div class="speakers">
+          <figure>
+            <img src="../images/photos/eiji.jpeg">
+            <figcaption>Eiji Kitamura</figcaption>
+            <p>Eiji is a Developer Advocate for Chrome at Google works closely with web application developers. Before joining Google, he has been specialized in SocialWeb technologies.</p>
+          </figure>
+          <figure>
+            <img src="../images/photos/alex.jpeg">
+            <figcaption>Alex Danilo</figcaption>
+            <p>Alex is a Chrome Developer Advocate. He has been actively involved with web standards and development for many years. His passion is the Open Web.</p>
+          </figure>
+        </div>
+      </article>
+      <article>
+        <h2>Who are we?</h2>
+        <h3>Teaching Assistants</h3>
+        <div class="tas">
+          <figure>
+            <img src="../images/photos/brett.jpeg">
+            <figcaption>Brett Morgan</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/photos/ernest.png">
+            <figcaption>Ernest Delgado</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/photos/luke.jpeg">
+            <figcaption>Luke Mahe</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/photos/scott.jpeg">
+            <figcaption>Scott Rowe</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/photos/takuya.jpeg">
+            <figcaption>Takuya Oikawa</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/photos/tarjei.jpeg">
+            <figcaption>Tarjei Vassbotn</figcaption>
+          </figure>
+        </div>
+      </article>
+      <article>
+        <h1>Lesson 1:<br/>Learning HTML5 slide layout</h1>
+      </article>
+      <article>
+        <h2>How HTML5 slide deck works</h2>
+        <img src="../images/slide_arch.png" alt="slide architecture" />
+        <ul>
+          <li>Locate slides to the center using absolute positioning technique</li>
+          <li>Distributing visible slides using CSS 2d transform</li>
+          <li>Enabling animation effect using CSS transition</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Locating slides to the center</h2>
+        <img src="../images/centering3.png" alt="centering" />
+      </article>
+      <article>
+        <h2>Exercise: Learning HTML5 slide layout</h2>
+        <ul>
+          <li>Step 1: Locating slides to the center</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Distributing visible slides using CSS 2d transform</h2>
+        <p>Using &quot;transform: translate&quot;, you can distribute slides.</p>
+        <pre class="prettyprint"><code>transform: translateX(10px); // horizontally move DOM
+transform: translateY(20px); // vertically move DOM
+transform: translate(10px, 20px); // set X and Y at once</code></pre>
+      </article>
+      <article>
+        <h2>CSS 2d transform</h2>
+        <iframe src="http://demo.agektmr.com/css3_anim/transform.html"></iframe>
+      </article>
+      <article>
+        <h2>Enabling animated motion effect using CSS transition</h2>
+        <p>By using &quot;transition&quot;, you can animate slides on transition.</p>
+        <pre class="prettyprint"><code>transition-property: margin; // name of property to animate
+transition-duration: 0.3s; // duration of the animation to finish
+transition-timing-function: ease-out; // how the animation flow over time
+transition-delay: // delay to start the animation</code></pre>
+      </article>
+      <article>
+        <h2>CSS transition</h2>
+        <iframe src="http://demo.agektmr.com/css3_anim/transition.html"></iframe>
+      </article>
+      <article>
+        <h2>Exercise: Learning HTML5 slide layout</h2>
+        <ul>
+          <li>Step 2: Distributing visible slides using CSS 2d transform</li>
+          <li>Step 3: Enabling animated motion effect using CSS transition</li>
+        </ul>
+      </article>
+      <article>
+        <h1>Lesson 2:<br/>Designing Slides</h1>
+      </article>
+      <article>
+        <h2>Reviewing basic CSS features</h2>
+        <ul>
+          <li>Effectively change taste of a page by using WebFonts</li>
+          <li>Enrich texture of background by adding CSS gradients</li>
+        </ul>
+      </article>
+      <article>
+        <h2>WebFonts</h2>
+        <p>WebFonts brings fonts that are not installed onto your system.</p>
+        <img src="../images/webfonts.png">
+      </article>
+      <article>
+        <h2>CSS gradients</h2>
+        <p><a href="http://dev.w3.org/csswg/css3-images/" target="_blank">Gradients</a> can be applied to any values that accept images.</p>
+        <pre class="prettyprint"><code>background: linear-gradient(top, black, white);
+background: radial-gradient(black, white)</code></pre>
+        <img src="../images/gradients.png" alt="">
+      </article>
+      <article>
+        <h2>Exercise: Designing slides</h2>
+        <p>Add eye candies to enrich the slide.</p>
+        <ul>
+          <li>Step 1: Add WebFonts and beautify typography</li>
+          <li>Step 2: Use gradient to enrich background</li>
+        </ul>
+      </article>
+      <article>
+        <h1>Lesson 3:<br/>Adding Dimension</h1>
+      </article>
+      <article>
+        <h2>Understanding 3D and Filter on CSS</h2>
+        <ul>
+          <li>Adding 3rd dimension to attach depth</li>
+          <li>Use CSS Filter alter DOM appearance</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Adding Z axis</h2>
+        <p>CSS3 can change appearance of DOM element as 3D object. Using Z axis, you can represent perspective to the 2D display.</p>
+        <img src="../images/z_axis.png" alt="">
+      </article>
+      <article>
+        <h2>What is perspective</h2>
+        <p>Depth of your view can be defined by using perspective property. The value represents how far from you to the original position.</p>
+        <img src="../images/perspective.png" alt="">
+      </article>
+      <article>
+        <h2>CSS Filters</h2>
+        <iframe src="http://demo.agektmr.com/css_filter/iframe.html"></iframe>
+      </article>
+      <article>
+        <h2>Exercise: Adding dimension</h2>
+        <p>Give slides 3D feeling to add depth.</p>
+        <ul>
+          <li>Step 1: Adding perspective to the slide sphere</li>
+          <li>Step 2: Adding 3rd dimension</li>
+          <li>Step 3: Giving depth with CSS Filter blur</li>
+        </ul>
+      </article>
+      <article>
+        <h1>Lesson 4:<br/>CSS Multi Column</h1>
+      </article>
+      <article>
+        <h1>Lesson 5:<br/>CSS Flexbox</h1>
+      </article>
+      <article>
+        <h1>Lesson 6:<br/>CSS Regions</h1>
+      </article>
+      <article>
+        <h1>Thanks!</h1>
+      </article>
+    </div>
+  </body>
+</html>

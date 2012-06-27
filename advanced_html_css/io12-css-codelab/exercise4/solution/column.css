@@ -1,0 +1,15 @@
+#mystory {
+	-webkit-column-width: 200px;
+	column-width: 200px;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+}
+
+#yourstory {
+	-webkit-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 80px;
+	column-gap: 80px;
+	-webkit-column-rule: 0.5em solid blue;
+	column-rule: 0.5em solid blue;
+}

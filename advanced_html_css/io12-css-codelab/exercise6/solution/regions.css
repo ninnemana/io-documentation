@@ -1,0 +1,31 @@
+#thread {
+	-webkit-flow-into: connected;
+	flow-into: connected;
+}
+
+.chunk {
+    -webkit-flow-from: connected;
+    flow-from: connected;
+    min-height: 300px;
+    width: 20%;
+    border: solid 1px black;
+}
+
+#region1 { 
+	position: absolute; 
+	top: 5%; 
+	left: 20%; 
+}
+
+#region2 { 
+	position: absolute; 
+	top: 30%; 
+	left: 50%;
+}
+
+#region3 { 
+	position: absolute; 
+	top: 50%; 
+	left: 20%;
+	overflow:hidden;
+}

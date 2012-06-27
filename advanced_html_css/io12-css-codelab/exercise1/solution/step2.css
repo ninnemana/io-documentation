@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', helvetica, Sans-Serif;
+  overflow: hidden;
+}
+
+#container article {
+  width: 800px;
+  height: 550px;
+  padding: 30px 50px;
+  background-color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -305px;
+  margin-left: -450px;
+  display: none;
+}
+
+#container article.prev2 {
+  -webkit-transform: translateX(-1900px);
+  transform: translateX(-1900px);
+  display: block;
+}
+#container article.prev {
+  -webkit-transform: translateX(-950px);
+  transform: translateX(-950px);
+  display: block;
+}
+#container article.current {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+}
+#container article.next {
+  -webkit-transform: translateX(950px);
+  transform: translateX(950px);
+  display: block;
+}
+#container article.next2 {
+  -webkit-transform: translateX(1900px);
+  transform: translateX(1900px);
+  display: block;
+}

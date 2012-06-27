@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', helvetica, Sans-Serif;
+}
+
+#container article {
+  width: 800px;
+  height: 550px;
+  padding: 30px 50px;
+  background-color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -305px;
+  margin-left: -450px;
+}
