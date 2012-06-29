@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1340924158682" transient="false" version="3.0">
+<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
+<feature id="com.google.dart.tools.eclipse.platform.feature" url="features/com.google.dart.tools.eclipse.platform.feature_0.1.0.201206201544/" version="0.1.0.201206201544">
+</feature>
+<feature id="com.google.dart.tools.deploy.feature" plugin-identifier="com.google.dart.tools.deploy" url="features/com.google.dart.tools.deploy.feature_0.1.0.201206201544/" version="0.1.0.201206201544">
+</feature>
+</site>
+</config>

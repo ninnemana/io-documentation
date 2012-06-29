@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: com.google.dart.tools.ui.dialogs
+Bundle-ActivationPolicy: lazy
+Bundle-Name: Dart Editor Deploy
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,or
+ g.eclipse.core.filesystem,org.eclipse.ui,org.eclipse.ui.ide,org.eclip
+ se.ui.console,com.google.dart.tools.core,com.google.dart.tools.ui,com
+ .google.dart.tools.debug.ui,org.eclipse.debug.ui,com.google.dart.tool
+ s.update.core
+Bundle-Vendor: Dart project authors
+Bundle-Version: 1.0.0.201206201544
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.google.dart.tools.deploy.Activator
+Bundle-SymbolicName: com.google.dart.tools.deploy; singleton:=true
+Import-Package: com.google.dart.tools.search.ui.actions
+
+

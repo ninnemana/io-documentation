@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.google.dart.tools.debug.core.serverLaunchConfig">
+<stringAttribute key="applicationName" value="/dartchat/finished/chat-server.dart"/>
+<stringAttribute key="launchTime" value="1340930715152"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/dartchat/finished/chat-server.dart"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

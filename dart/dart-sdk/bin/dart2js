@@ -1,0 +1,7 @@
+#!/bin/sh
+# Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+# for details. All rights reserved. Use of this source code is governed by a
+# BSD-style license that can be found in the LICENSE file.
+
+BIN_DIR=`dirname $0`
+exec $BIN_DIR/dart --heap_growth_rate=32 $BIN_DIR/../lib/dart2js/lib/compiler/implementation/dart2js.dart "$@"

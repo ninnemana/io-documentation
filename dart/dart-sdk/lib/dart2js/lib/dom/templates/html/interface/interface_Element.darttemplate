@@ -1,0 +1,87 @@
+// Copyright (c) 2011, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+interface ElementList extends List<Element> {
+  // TODO(jacobr): add element batch manipulation methods.
+  ElementList filter(bool f(Element element));
+
+  ElementList getRange(int start, int length);
+
+  Element get first();
+  // TODO(jacobr): add insertAt
+}
+
+/**
+ * All your attribute manipulation needs in one place.
+ * Extends the regular Map interface by automatically coercing non-string
+ * values to strings.
+ */
+interface AttributeMap extends Map<String, String> {
+  void operator []=(String key, value);
+}
+
+/**
+ * All your element measurement needs in one place
+ */
+interface ElementRect {
+  // Relative to offsetParent
+  ClientRect get client();
+  ClientRect get offset();
+  ClientRect get scroll();
+  // In global coords
+  ClientRect get bounding();
+  // In global coords
+  List<ClientRect> get clientRects();
+}
+
+interface NodeSelector {
+  Element query(String selectors);
+  NodeList queryAll(String selectors);
+}
+
+$!COMMENT
+interface Element extends Node, NodeSelector default _$(ID)FactoryProvider {
+  Element.html(String html);
+  Element.tag(String tag);
+
+  AttributeMap get attributes();
+  void set attributes(Map<String, String> value);
+
+  /**
+   * @domName childElementCount, firstElementChild, lastElementChild,
+   *   children, Node.nodes.add
+   */
+  ElementList get elements();
+
+  void set elements(Collection<Element> value);
+
+  /** @domName className, classList */
+  Set<String> get classes();
+
+  void set classes(Collection<String> value);
+
+  AttributeMap get dataAttributes();
+  void set dataAttributes(Map<String, String> value);
+
+  /**
+   * @domName getClientRects, getBoundingClientRect, clientHeight, clientWidth,
+   * clientTop, clientLeft, offsetHeight, offsetWidth, offsetTop, offsetLeft,
+   * scrollHeight, scrollWidth, scrollTop, scrollLeft
+   */
+  Future<ElementRect> get rect();
+
+  /** @domName Window.getComputedStyle */
+  Future<CSSStyleDeclaration> get computedStyle();
+
+  /** @domName Window.getComputedStyle */
+  Future<CSSStyleDeclaration> getComputedStyle(String pseudoElement);
+
+  Element clone(bool deep);
+
+  Element get parent();
+
+$!MEMBERS
+}
