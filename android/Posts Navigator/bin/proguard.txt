@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:25
+-keep class com.google.api.services.samples.blogger.android.PostDisplayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.google.api.services.samples.blogger.android.PostListActivity { <init>(...); }
+

@@ -1,0 +1,12 @@
+<resources>
+
+        <string name="app_name">Post Creator</string>
+        <string name="hello_world">Hello world!</string>
+        <string name="menu_settings">Settings</string>
+        <string name="title_activity_create_post">CreatePostActivity</string>
+        <string name="title">Title</string>
+        <string name="content">Content</string>
+        <string name="create_post">Create Post</string>
+        <string name="menu_accounts">Change Account</string>
+
+    </resources>
