@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="newApplicationWizard.settings">
+		<item value="/Users/alexninneman/Projects/io/dart/Chat" key="parentDir"/>
+	</section>
 	<section name="completion_proposal_size">
+	</section>
+	<section name="FeedbackDialog">
+	</section>
+	<section name="RenameInformationPopup">
+		<item value="2" key="snap_position"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

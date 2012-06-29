@@ -1,0 +1,48 @@
+Why?
+
+	Look around you, what do you see?
+	Do you see single-stepping world doing one thing at a time?
+	Or do you see a complex world of interacting, indepently?
+
+What is concurency?
+
+	Concurrency is the composition of idependent actions.
+
+	Concurrency is not parallelism
+		Concurrency is not parallelism, althought it enables parallelism
+
+A model for software construction
+
+	Easy to understand, use, and reason about.
+	You don't need to be an expert!
+
+Goroutines
+
+	What is a goroutine? It's an independently executing function, launched by a go statement.
+
+Channels
+
+	Don't communicate by sharing memory, share memory by communicating
+
+"Patterns" - Simple examples
+
+	Channels are first-class values, just like strings or integers.
+
+Multiplexing
+
+	These programs make Joe and An count in lockstep.
+	We can instead use a fan-in function to let whosoever is ready to talk.
+
+Retore sequencing
+	Send a channel on a channel, making gorouting wait its turn
+
+Select
+	A control structure unique to concurrency
+	The reason channels and goroutines are built into the language
+
+	The select statement provides another way to handle multiple channels.
+	It's like a switch, but each case is a communication
+	- All channels are evaluated
+	- Selection blocks until one communication can prodceed which then does.
+	- If multiple can proceed, select chooses pseudo-rnadomly.
+

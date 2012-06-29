@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="8" version="2.0">
+<workbench progressCount="7" version="2.0">
 <workbenchAdvisor/>
-<window height="900" width="1200" x="0" y="33">
+<window height="1174" minimized="true" width="1085" x="0" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar/>
 <coolbarLayout>
@@ -13,27 +13,54 @@
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="40" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.google.dart.tools.ui.web.html.HtmlEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
 <page focus="true" label="Workspace - Dart">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="com.google.dart.tools.ui.internal.presentation.DartEditorPresentationFactory"/>
+<presentation id="com.google.dart.tools.ui.internal.presentation.DartEditorPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="chat-client.dart" partName="chat-client.dart" path="/Volumes/NO NAME/dartchat/start-here/client/chat-client.dart" title="chat-client.dart" tooltip="/Volumes/NO NAME/dartchat/start-here/client/chat-client.dart" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dartchat/start-here/client/chat-client.dart"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3226" selectionTopPixel="1827"/>
+</editor>
+<editor id="com.google.dart.tools.ui.web.html.HtmlEditor" name="index.html" partName="index.html" path="/Volumes/NO NAME/dartchat/start-here/client/index.html" title="index.html" tooltip="/Volumes/NO NAME/dartchat/start-here/client/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dartchat/start-here/client/index.html"/>
+<editorState selectionHorizontalPixel="28" selectionLength="0" selectionOffset="587" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="com.google.dart.tools.ui.FileExplorer" partName="Files">
-<viewState linkWithEditor="true"/>
+<viewState linkWithEditor="true">
+<expanded>
+<element path="/dartchat"/>
+<element path="/dartchat/finished"/>
+<element path="/dartchat/finished/client"/>
+</expanded>
+<selection>
+<element path="/dartchat/finished/client/chat-client.dart"/>
+</selection>
+</viewState>
 </view>
 <view id="com.google.dart.tools.ui.ProblemsView" partName="Problems">
 <viewState columnWidths="520;220" partName="Problems"/>
 </view>
+<view id="com.google.dart.tools.debug.debuggerView" partName="Debugger">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
 </views>
-<perspectives activePart="com.google.dart.tools.ui.FileExplorer" activePerspective="com.google.dart.tools.ui.DartPerspective">
+<perspectives activePart="com.google.dart.tools.ui.console:1182023819" activePerspective="com.google.dart.tools.ui.DartPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.google.dart.tools.ui.DartPerspective" id="com.google.dart.tools.ui.DartPerspective" label="Dart"/>
 <alwaysOnActionSet id="com.google.dart.tools.ui.config.java.actionSet.presentation"/>
@@ -43,8 +70,8 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <alwaysOnActionSet id="com.google.dart.tools.ui.DartActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.eclipse.ui.console.ConsoleView"/>
 <show_view_action id="org.eclipse.ui.views.ContentOutline"/>
 <show_view_action id="org.eclipse.ui.views.ProblemView"/>
@@ -62,6 +89,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="com.google.dart.tools.ui.FileExplorer"/>
 <view id="com.google.dart.tools.ui.ProblemsView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.google.dart.tools.debug.debuggerView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -81,28 +110,42 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="298" ratioRight="894" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.74939173" ratioLeft="616" ratioRight="206" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.google.dart.tools.ui.console:96868586" appearance="2" expanded="2">
+<folder activePageID="com.google.dart.tools.ui.console:1182023819" appearance="2" expanded="2">
 <page content="com.google.dart.tools.ui.ProblemsView" label="Problems"/>
-<page content="com.google.dart.tools.ui.console:96868586" label="Dartium launch"/>
+<page content="com.google.dart.tools.ui.console:2009425957" label="Output"/>
+<page content="com.google.dart.tools.ui.console:1182023819" label="chat-server.dart"/>
+<page content="com.google.dart.tools.ui.console:1434270503" label="Dartium launch"/>
+<page content="com.google.dart.tools.ui.console:96868586" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="com.google.dart.tools.ui.console" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="com.google.dart.tools.ui.console:990421078" label="LabelNotFound"/>
+<page content="com.google.dart.tools.ui.console:1133638181" label="LabelNotFound"/>
+<page content="com.google.dart.tools.ui.console:380391442" label="LabelNotFound"/>
 <presentation id="com.google.dart.tools.ui.internal.presentation.DartEditorPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.69910514" ratioLeft="625" ratioRight="269" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="com.google.dart.tools.debug.debuggerView" label="LabelNotFound"/>
+<folder activePageID="com.google.dart.tools.debug.debuggerView" appearance="2" expanded="2">
+<page content="com.google.dart.tools.debug.debuggerView" label="Debugger"/>
+<presentation id="com.google.dart.tools.ui.internal.presentation.DartEditorPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="outlineFolder" ratio="0.5" ratioLeft="411" ratioRight="411" relationship="4" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="com.google.dart.tools.ui.internal.presentation.DartEditorPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -112,10 +155,158 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" path="/clock/clock.dart"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" path="/dartchat/start-here/client/chat-client.dart"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.web.html.HtmlEditor" path="/dartchat/start-here/client/index.html"/>
 </editors>
-<item active="true" historyLabel="clock.dart" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="2674" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="2926" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="67" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="2063" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="405" y="4"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="488" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="534" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="575" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="585" y="23"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="677" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="697" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="698" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="707" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="766" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="873" y="0"/>
+</item>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="587" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="873" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3123" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3198" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="811" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="4089" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3232" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="503" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="575" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="290" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3226" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="2716" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3231" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3049" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3226" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3067" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="3201" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="156" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1254" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1290" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1381" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1482" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1522" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1143" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1040" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="886" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1485" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="680" y="0"/>
+</item>
+<item historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1485" y="0"/>
+</item>
+<item active="true" historyLabel="chat-client.dart" index="0">
+<position info="not_deleted" x="1485" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -134,6 +325,30 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.web.html.HtmlEditor" name="index.html" tooltip="dartchat/start-here/client/index.html">
+<persistable path="/dartchat/start-here/client/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="chat-client.dart" tooltip="dartchat/start-here/client/chat-client.dart">
+<persistable path="/dartchat/start-here/client/chat-client.dart"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="file-logger.dart" tooltip="dartchat/finished/file-logger.dart">
+<persistable path="/dartchat/finished/file-logger.dart"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="server-utils.dart" tooltip="dartchat/finished/server-utils.dart">
+<persistable path="/dartchat/finished/server-utils.dart"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="chat-client.dart" tooltip="dartchat/finished/client/chat-client.dart">
+<persistable path="/dartchat/finished/client/chat-client.dart"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="chat-server.dart" tooltip="dartchat/finished/chat-server.dart">
+<persistable path="/dartchat/finished/chat-server.dart"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="numbers.dart" tooltip="clock/numbers.dart">
+<persistable path="/clock/numbers.dart"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="balls.dart" tooltip="clock/balls.dart">
+<persistable path="/clock/balls.dart"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.google.dart.tools.ui.text.editor.CompilationUnitEditor" name="clock.dart" tooltip="clock/clock.dart">
 <persistable path="/clock/clock.dart"/>
 </file>

@@ -313,3 +313,87 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/clock' is not 
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
 !SUBENTRY 1 org.eclipse.core.resources 4 372 2012-06-28 16:10:19.825
 !MESSAGE Resource '/clock' is not open.
+
+!ENTRY org.eclipse.ui.console 4 2 2012-06-28 17:53:37.545
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1065)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:581)
+	at org.eclipse.ui.internal.console.IOConsoleViewer.setReadOnly(IOConsoleViewer.java:96)
+	at org.eclipse.ui.internal.console.IOConsolePage.setReadOnly(IOConsolePage.java:91)
+	at org.eclipse.ui.internal.console.IOConsolePage$1.propertyChange(IOConsolePage.java:46)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:120)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:246)
+	at org.eclipse.ui.console.TextConsole.checkFinished(TextConsole.java:485)
+	at org.eclipse.ui.console.TextConsole.matcherFinished(TextConsole.java:476)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.console 4 2 2012-06-28 17:53:37.545
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1065)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:581)
+	at org.eclipse.ui.internal.console.IOConsoleViewer.setReadOnly(IOConsoleViewer.java:96)
+	at org.eclipse.ui.internal.console.IOConsolePage.setReadOnly(IOConsolePage.java:91)
+	at org.eclipse.ui.internal.console.IOConsolePage$1.propertyChange(IOConsolePage.java:46)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:120)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:246)
+	at org.eclipse.ui.console.TextConsole.checkFinished(TextConsole.java:485)
+	at org.eclipse.ui.console.TextConsole.matcherFinished(TextConsole.java:476)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.console 4 120 2012-06-28 17:53:37.546
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1065)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:581)
+	at org.eclipse.ui.internal.console.IOConsoleViewer.setReadOnly(IOConsoleViewer.java:96)
+	at org.eclipse.ui.internal.console.IOConsolePage.setReadOnly(IOConsolePage.java:91)
+	at org.eclipse.ui.internal.console.IOConsolePage$1.propertyChange(IOConsolePage.java:46)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:120)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:246)
+	at org.eclipse.ui.console.TextConsole.checkFinished(TextConsole.java:485)
+	at org.eclipse.ui.console.TextConsole.matcherFinished(TextConsole.java:476)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.console 4 120 2012-06-28 17:53:37.547
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1065)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:581)
+	at org.eclipse.ui.internal.console.IOConsoleViewer.setReadOnly(IOConsoleViewer.java:96)
+	at org.eclipse.ui.internal.console.IOConsolePage.setReadOnly(IOConsolePage.java:91)
+	at org.eclipse.ui.internal.console.IOConsolePage$1.propertyChange(IOConsolePage.java:46)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:120)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:246)
+	at org.eclipse.ui.console.TextConsole.checkFinished(TextConsole.java:485)
+	at org.eclipse.ui.console.TextConsole.matcherFinished(TextConsole.java:476)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
